@@ -68,6 +68,7 @@ export const FeaturedProduct = () => {
                         className="flex flex-col grow text-xl font-black leading-7 text-neutral-900 max-md:mt-7"
                       >
                         <img
+                          key={item.id}
                           loading="lazy"
                           src={item.imgUrl}
                           className="w-full aspect-square"

@@ -26,6 +26,7 @@ const Products = () => {
                       className="flex cursor-pointer  flex-col grow text-xl transition-transform duration-300 hover:scale-110  font-black leading-7 text-neutral-900 max-md:mt-7 "
                     >
                       <img
+                        key={id}
                         loading="lazy"
                         src={imgUrl}
                         className=" aspect-square"
