@@ -64,7 +64,7 @@ export function CartModal({
               {items &&
                 items.map((item) => {
                   return (
-                    <div className="mt-10 mb-10 flex gap-7">
+                    <div key={item.id} className="mt-10 mb-10 flex gap-7">
                       <img
                         key={item.id}
                         className="flex h-20 w-20"

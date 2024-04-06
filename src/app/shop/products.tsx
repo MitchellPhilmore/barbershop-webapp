@@ -18,7 +18,7 @@ const Products = () => {
         <div className=" grid grid-cols-3 gap-4 p-4">
           {items.map(({ id, name, description, price, imgUrl }) => {
             return (
-              <div className=" p-10 flex-wrap  py-px mt-10 max-w-full  max-md:pr-5">
+              <div key={id} className=" p-10 flex-wrap  py-px mt-10 max-w-full  max-md:pr-5">
                 <div className="flex  max-md:flex-col max-md:gap-0">
                   <div className="flex flex-col  max-md:ml-0 max-md:w-full">
                     <Link

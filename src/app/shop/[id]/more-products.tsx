@@ -30,7 +30,7 @@ export const MoreProducts = ({ products }: any) => {
             .slice(0, 3)
             .map(({ id, imgUrl, name, description, price }: any) => {
               return (
-                <div className="flex flex-col w-[33%] max-md:ml-0 max-md:w-full">
+                <div key={id} className="flex flex-col w-[33%] max-md:ml-0 max-md:w-full">
                   <Link
                     href={`/shop/${id}`}
                     key={id}
