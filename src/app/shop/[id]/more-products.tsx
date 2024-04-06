@@ -33,12 +33,14 @@ export const MoreProducts = ({ products }: any) => {
                 <div className="flex flex-col w-[33%] max-md:ml-0 max-md:w-full">
                   <Link
                     href={`/shop/${id}`}
+                    key={id}
                     className="flex flex-col grow py-px text-xl font-black leading-7 text-neutral-900 max-md:mt-7"
                   >
                     <img
                       loading="lazy"
                       srcSet={imgUrl}
                       className="w-full aspect-square"
+                      key={id}
                     />
                     <div className="mt-11 uppercase max-md:mt-10 max-md:mr-1">
                       {name}

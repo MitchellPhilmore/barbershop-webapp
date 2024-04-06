@@ -23,6 +23,7 @@ const Products = () => {
                   <div className="flex flex-col  max-md:ml-0 max-md:w-full">
                     <Link
                       href={`/shop/${id}`}
+                      key={id}
                       className="flex cursor-pointer  flex-col grow text-xl transition-transform duration-300 hover:scale-110  font-black leading-7 text-neutral-900 max-md:mt-7 "
                     >
                       <img

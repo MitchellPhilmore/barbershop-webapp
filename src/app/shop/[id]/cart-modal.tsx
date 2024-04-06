@@ -17,7 +17,6 @@ import { Input } from "@/components/ui/input";
 
 import axios from "axios";
 
-
 export function CartModal({
   isOpen,
   count,
@@ -30,16 +29,14 @@ export function CartModal({
   const { addItem, selectedProduct, removeItem, items } = useCartStore();
   const { onClose } = useProductModal();
 
-  const onCheckout = async  () => {
-    console.log(items)
+  const onCheckout = async () => {
+    console.log(items);
     const response = await axios.post(`http://localhost:3000/api/checkout`, {
-      productIds: items.map((item:any) => item.id),
-      quantity: items.map((item:any) => item.quantity)
-     
-    })
-    window.location = response.data.url
-  }
-  
+      productIds: items.map((item: any) => item.id),
+      quantity: items.map((item: any) => item.quantity),
+    });
+    window.location = response.data.url;
+  };
 
   useEffect(() => {
     console.log(items);
@@ -68,7 +65,11 @@ export function CartModal({
                 items.map((item) => {
                   return (
                     <div className="mt-10 mb-10 flex gap-7">
-                      <img className="flex h-20 w-20" src={`${item.imgUrl}`} />
+                      <img
+                        key={item.id}
+                        className="flex h-20 w-20"
+                        src={`${item.imgUrl}`}
+                      />
                       <div className="flex-col self-end">
                         <p className="font-black text-xl">{item.name}</p>
                         <p className="text-lg italic font-semibold">
@@ -109,9 +110,7 @@ export function CartModal({
                 </p>
                 <p className="font-bold text-xl text-black "> ${total}</p>
               </div>
-              <div className="z-100">
-                {/* <StripeWrapper/> */}
-              </div>
+              <div className="z-100">{/* <StripeWrapper/> */}</div>
             </AlertDialogDescription>
           </AlertDialogHeader>
           <AlertDialogFooter className="product-modal mt-10 mb-10 ">
