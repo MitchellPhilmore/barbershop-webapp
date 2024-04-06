@@ -66,6 +66,7 @@ export const FeaturedProduct = () => {
                       <Link
                         href={`/shop/${item.id}`}
                         className="flex flex-col grow text-xl font-black leading-7 text-neutral-900 max-md:mt-7"
+                        key={item.id}
                       >
                         <img
                           key={item.id}
