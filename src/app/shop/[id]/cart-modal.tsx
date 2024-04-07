@@ -31,10 +31,13 @@ export function CartModal({
 
   const onCheckout = async () => {
     console.log(items);
-    const response = await axios.post(`http://localhost:3000/api/checkout`, {
-      productIds: items.map((item: any) => item.id),
-      quantity: items.map((item: any) => item.quantity),
-    });
+    const response = await axios.post(
+      `https://barbershop-webapp-gnn7022xl-mitchs-projects-9ddff321.vercel.app/api/checkout`,
+      {
+        productIds: items.map((item: any) => item.id),
+        quantity: items.map((item: any) => item.quantity),
+      }
+    );
     window.location = response.data.url;
   };
 
