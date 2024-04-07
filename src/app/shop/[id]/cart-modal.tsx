@@ -52,19 +52,20 @@ export function CartModal({
       return total + item.price * item.quantity;
     }, 0);
   }
+  
 
   const total = calculateTotal(items);
   return (
     <>
       <AlertDialog open={isOpen}>
-        <AlertDialogContent>
+        <AlertDialogContent className=" custom-scrollbar overflow-y-scroll max-h-[600px]">
           <AlertDialogHeader>
-            <AlertDialogTitle>Your Cart</AlertDialogTitle>
+            <AlertDialogTitle className="text-xl">Your Cart</AlertDialogTitle>
             <AlertDialogDescription>
               {items &&
                 items.map((item) => {
                   return (
-                    <div key={item.id} className="mt-10 mb-10 flex gap-7">
+                    <div key={item.id} className=" grid grid-cols-3 grid-flow-col gap-4 mt-10 mb-10  ">
                       <img
                         key={item.id}
                         className="flex h-20 w-20"

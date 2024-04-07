@@ -259,3 +259,17 @@ input::placeholder {
   border-radius: 5px;
   margin-top: -6px;
 }
+
+.custom-scrollbar::-webkit-scrollbar {
+  width: 12px; /* width of the entire scrollbar */
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: transparent; /* color of the tracking area */
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background-color: #e8d1ba; /* color of the scroll thumb */
+  border-radius: 6px; /* roundness of the scroll thumb */
+  border: 3px solid transparent; /* creates padding around scroll thumb */
+}
