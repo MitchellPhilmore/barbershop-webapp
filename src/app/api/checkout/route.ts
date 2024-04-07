@@ -3,8 +3,20 @@ import { NextResponse } from "next/server";
 
 import { stripe } from "@/lib/stripe";
 import prismadb from "@/lib/prismadb";
+import initMiddleware from "@/lib/init-middleware";
+import Cors from "cors";
 
-export async function POST(req: Request) {
+const cors = initMiddleware(
+  Cors({
+    // Only allow requests from a specific origin
+    origin:
+      "https://barbershop-webapp-glt8clne5-mitchs-projects-9ddff321.vercel.app/",
+    // Additional CORS options can be specified here
+  })
+);
+
+export async function POST(req: Request, res: Response) {
+  await cors(req, res);
   const { productIds, quantity } = await req.json();
   console.log("--->", productIds);
 
@@ -41,8 +53,8 @@ export async function POST(req: Request) {
     phone_number_collection: {
       enabled: true,
     },
-    success_url: "/order-confirmation",
-    cancel_url: "/",
+    success_url: "https://barbershop-webapp.vercel.app/order-confirmation",
+    cancel_url: "https://barbershop-webapp.vercel.app/",
   });
   return NextResponse.json({ url: session.url });
 }
