@@ -115,14 +115,14 @@ export function CartModal({
           </AlertDialogHeader>
           <AlertDialogFooter className="product-modal mt-10 mb-10 ">
             <AlertDialogCancel
-              className=" mt-10"
+              className=" w-50 mt-10 uppercase font-semibold"
               onClick={() => productModal.onClose()}
             >
               Cancel
             </AlertDialogCancel>
             <AlertDialogAction
               onClick={onCheckout}
-              className="uppercase bg-[#C09B6B]  hover:bg-orange-400"
+              className="uppercase mt-5 bg-[#C09B6B]  hover:bg-orange-400"
             >
               Continue to checkout
             </AlertDialogAction>

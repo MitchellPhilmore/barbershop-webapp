@@ -27,7 +27,7 @@ export async function POST(req: Request, res: Response) {
         currency: "USD",
         product_data: {
           name: product.name,
-          images: ["https://placehold.co/600x400/000000/FFFFFF/png"],
+          images: [product.imgUrl],
         },
         unit_amount: parseInt(product.price) * 100,
       },

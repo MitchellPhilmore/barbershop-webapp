@@ -4,9 +4,13 @@ import Link from "next/link";
 import { useParallax } from "react-scroll-parallax";
 import { useCartStore } from "../cart-store";
 import { Parallax } from "react-scroll-parallax";
+import { useProductModal } from "../shop/[id]/product-modal";
+import { CartModal } from "../shop/[id]/cart-modal";
 
 export const Header = () => {
   const { items } = useCartStore();
+  const onOpen = useProductModal((state) => state.onOpen);
+  const { isOpen } = useProductModal();
 
   return (
     <div
@@ -23,15 +27,14 @@ export const Header = () => {
           }}
         >
           <div className="flex gap-5 justify-between items-center self-stretch text-base font-black leading-5 uppercase max-md:flex-wrap">
-            <img
-              loading="lazy"
-              src="https://cdn.builder.io/api/v1/image/assets/TEMP/253d522dfdb3a95b05c4c08239e4c4c0eed3aa78b52918ffb7be2604a7c561dc?"
-              className="shrink-0 self-stretch my-auto max-w-full aspect-[5.88] w-[173px]"
-            />
-            <div className="flex gap-5 justify-end self-stretch px-4 my-auto text-white whitespace-nowrap max-md:flex-wrap">
-              <Link href={"/"} className="grow cursor-pointer">
-                Home
-              </Link>
+            <Link href={"/"}>
+              <img
+                loading="lazy"
+                src="https://cdn.builder.io/api/v1/image/assets/TEMP/253d522dfdb3a95b05c4c08239e4c4c0eed3aa78b52918ffb7be2604a7c561dc?"
+                className=" cursor-pointer shrink-0 self-stretch my-auto max-w-full aspect-[5.88] w-[173px]"
+              />
+            </Link>
+            <div className="flex gap-5 justify-end self-stretch pl-36 my-auto text-white whitespace-nowrap max-md:flex-wrap">
               <Link href={"/about"} className="cursor-pointer">
                 About
               </Link>
@@ -48,9 +51,14 @@ export const Header = () => {
             </div>
             <div className="flex gap-3.5 justify-end self-stretch">
               <div className="flex gap-0 pr-5 my-auto text-white">
-                <div className="grow cursor-pointer">Cart (</div>
+                <div onClick={onOpen} className="grow cursor-pointer">
+                  Cart (
+                </div>
                 <div className="text-center">{items.length}</div>
                 <div>)</div>
+                {isOpen && items && (
+                  <CartModal count={0} product={items} isOpen={isOpen} />
+                )}
               </div>
               <Link
                 href={"/contact"}
