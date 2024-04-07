@@ -8,10 +8,9 @@ import Cors from "cors";
 
 const cors = initMiddleware(
   Cors({
-    // Only allow requests from a specific origin
     origin:
       "https://barbershop-webapp-glt8clne5-mitchs-projects-9ddff321.vercel.app/",
-    // Additional CORS options can be specified here
+  
   })
 );
 
