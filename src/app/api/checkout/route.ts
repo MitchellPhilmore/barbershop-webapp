@@ -41,8 +41,8 @@ export async function POST(req: Request) {
     phone_number_collection: {
       enabled: true,
     },
-    success_url: "http://localhost:3000/order-confirmation",
-    cancel_url: "http://localhost:3000/",
+    success_url: "https://barbershop-webapp.vercel.app/order-confirmation",
+    cancel_url: "https://barbershop-webapp.vercel.app/",
   });
   return NextResponse.json({ url: session.url });
 }
