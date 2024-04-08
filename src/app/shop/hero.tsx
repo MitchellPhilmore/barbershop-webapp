@@ -26,12 +26,11 @@ const Hero = () => {
                 <div className="w-full">Browse Our Products</div>
               </div>
               <p className="text-white mt-5">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem
-                eius in quia aut? Repellendus non ipsum, eos quas autem nesciunt
-                animi pariatur porro eaque vitae expedita nihil asperiores
-                dolorum explicabo reprehenderit quia perferendis minus ipsam
-                minima deserunt? Cum ex voluptatibus quam natus magni, debitis
-                porro fugit voluptatum deserunt cupiditate eos!
+                Explore our handpicked selection of premium hair care products.
+                Tailored for the modern gentleman. From styling pomades to
+                nourishing shampoos, find everything you need to keep your hair
+                looking sharp and healthy. Perfect for those who value
+                sophistication and quality in their grooming routine.
               </p>
             </div>
           </div>

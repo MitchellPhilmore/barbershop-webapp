@@ -76,7 +76,7 @@ const Hero = () => {
                 />
               </div>
               <Button
-                disabled={(quantity <= 0 || isNaN(quantity))}
+                disabled={quantity <= 0 || isNaN(quantity)}
                 onClick={() => {
                   addItem({
                     id,
@@ -100,9 +100,8 @@ const Hero = () => {
                 Why buy our products?
               </div>
               <div className="mt-3 mr-8 text-lg leading-8 text-zinc-100 max-md:mr-2.5 max-md:max-w-full">
-                Vitae congue eu consequat ac felis placerat vestibulum lectus
-                <br />
-                mauris ultrices cursus sit amet dictum sit
+                Superior quality, lasting results, crafted for the discerning
+                gentleman. Elevate your grooming game with us.
               </div>
               <div className="flex gap-2.5 mt-6 text-base font-bold leading-5 text-white max-md:flex-wrap">
                 <img
