@@ -35,7 +35,7 @@ export const Hero = () => {
                 <img
                   loading="lazy"
                   src="/hero-2.jpg"
-                  className="w-full h-[751px] z-50 max-md:max-w-full"
+                  className="w-full h-[751px] sm: flex-col z-50 max-md:max-w-full"
                 />
               </div>
             </div>
@@ -101,7 +101,7 @@ export const Hero = () => {
         </div>
       </div>
 
-      <div className=" mt-10 justify-center  self-center px-5 w-full max-w-[1292px] max-md:max-w-full">
+      <div className=" justify-center  self-center px-5 w-full max-w-[1292px] max-md:max-w-full">
         <div className="flex gap-5 max-md:flex-col max-md:gap-0">
           <div className="flex flex-col w-[33%] max-md:ml-0 max-md:w-full">
             <div className="flex flex-col grow justify-center items-center self-stretch px-12 font-black text-center text-neutral-900 max-md:px-5 max-md:mt-7">

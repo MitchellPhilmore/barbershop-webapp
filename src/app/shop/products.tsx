@@ -15,12 +15,12 @@ const Products = () => {
   return (
     <>
       <div className="flex flex-row w-full">
-        <div className=" grid grid-cols-3 gap-4 p-4">
+        <div className=" grid lg:grid-cols-3 gap-4 p-4 sm:grid grid-rows-3">
           {items.map(({ id, name, description, price, imgUrl }) => {
             return (
               <div key={id} className=" p-10 flex-wrap  py-px mt-10 max-w-full  max-md:pr-5">
                 <div className="flex  max-md:flex-col max-md:gap-0">
-                  <div className="flex flex-col  max-md:ml-0 max-md:w-full">
+                  <div className="flex flex-col sm:flex-col  max-md:ml-0 max-md:w-full">
                     <Link
                       href={`/shop/${id}`}
                       key={id}
@@ -36,7 +36,7 @@ const Products = () => {
                       <div className="mt-11 text-center uppercase max-md:mt-10 max-md:mr-1">
                         {name}
                       </div>
-                      <div className="mt-3.5 text-center text-lg leading-8 text-neutral-700 max-md:mr-1">
+                      <div className="mt-3.5 text-center text-lg leading-8 text-neutral-700 s max-md:mr-1">
                         {description}
                       </div>
                       <div className="mt-6 text-center uppercase max-md:mr-1">
