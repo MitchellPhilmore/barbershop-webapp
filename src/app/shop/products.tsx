@@ -14,8 +14,8 @@ const Products = () => {
 
   return (
     <>
-      <div className="flex flex-row w-full">
-        <div className=" grid lg:grid-cols-3 gap-4 p-4 sm:grid grid-rows-3">
+      <div className="flex flex-row w-full ">
+        <div className=" grid lg:grid-cols-3 gap-4 p-4 ">
           {items.map(({ id, name, description, price, imgUrl }) => {
             return (
               <div key={id} className=" p-10 flex-wrap  py-px mt-10 max-w-full  max-md:pr-5">
