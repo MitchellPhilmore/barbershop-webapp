@@ -23,14 +23,17 @@ const Hero = () => {
               </div>
 
               <div className=" flex  w-full text-white  justify-center uppercase font-barlow text-7xl font-extrabold leading-none">
-                <div className="w-full">Browse Our Products</div>
+                <div className="w-full text-lg md:text-7xl ">Browse Our Products</div>
               </div>
-              <p className="text-white mt-5">
-                Explore our handpicked selection of premium hair care products.
-                Tailored for the modern gentleman. From styling pomades to
-                nourishing shampoos, find everything you need to keep your hair
-                looking sharp and healthy. Perfect for those who value
-                sophistication and quality in their grooming routine.
+              <p className="text-white mt-5  text-sm sm:w-75  md:text-base">
+              Explore our handpicked selection of premium hair care products in the 'Browse Products' section, tailored for the modern gentleman. From styling pomades to nourishing shampoos, find everything you need to keep your hair looking sharp and healthy. Perfect for those who value sophistication and quality in their grooming routine.
+
+
+
+
+
+
+
               </p>
             </div>
           </div>
