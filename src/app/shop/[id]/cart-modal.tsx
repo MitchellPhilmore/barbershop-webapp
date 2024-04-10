@@ -58,10 +58,10 @@ export function CartModal({
   return (
     <>
       <AlertDialog open={isOpen}>
-        <AlertDialogContent className=" custom-scrollbar overflow-y-scroll max-h-[600px]">
+        <AlertDialogContent className=" custom-scrollbar overflow-y-scroll md:max-h-[600px] ">
           <AlertDialogHeader>
             <AlertDialogTitle className="text-xl">Your Cart</AlertDialogTitle>
-            <AlertDialogDescription>
+            <AlertDialogDescription className="">
               {items &&
                 items.map((item) => {
                   return (
@@ -105,7 +105,7 @@ export function CartModal({
                     </div>
                   );
                 })}
-              <div className="flex justify-between">
+              <div className="flex justify-evenly">
                 <p className="font-bold text-xl text-black uppercase ">
                   Subtotal:
                 </p>
