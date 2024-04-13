@@ -1,5 +1,7 @@
 "use client";
 
+import Link from "next/link";
+
 export const Footer = () => {
   return (
     <div className="flex mt-14 flex-col self-stretch pt-14 bg-neutral-900">
@@ -121,39 +123,32 @@ export const Footer = () => {
                 <div className="flex gap-5 max-md:flex-col max-md:gap-0">
                   <div className="flex flex-col w-[58%] max-md:ml-0 max-md:w-full">
                     <div className="flex flex-col font-black uppercase max-md:mt-10">
-                      <div className="text-lg leading-6 text-zinc-400">
-                        Menu
-                      </div>
+                     
                       <div className="flex gap-5 justify-between mt-8 text-2xl leading-9 text-white">
                         <div className="flex flex-col self-start pb-5">
-                          <div>home</div>
-                          <div className="mt-5">About</div>
-                          <div className="mt-5">Services</div>
-                          <div className="mt-5">Blog</div>
-                          <div className="mt-5">Blog Post</div>
+                          <Link href={"/home"}>Home</Link>
+                          <Link href={"/about"} className="mt-5">
+                            About
+                          </Link>
+                          <Link href={"/services"} className="mt-5">
+                            Services
+                          </Link>
                         </div>
                         <div className="flex flex-col pb-5">
-                          <div>Shop</div>
-                          <div className="mt-5">Shop Single</div>
-                          <div className="mt-5">Contact</div>
-                          <div className="mt-5">Team member</div>
+                          <Link href={"/shop"} className="">
+                            Shop
+                          </Link>
+                          <Link href={"/contact"} className="mt-5">
+                            Contact
+                          </Link>
+                          <Link href={"/about"} className="mt-5">
+                            Team member
+                          </Link>
                         </div>
                       </div>
                     </div>
                   </div>
-                  <div className="flex flex-col ml-5 w-[42%] max-md:ml-0 max-md:w-full">
-                    {/* <div className="flex flex-col grow pb-5 text-2xl font-black leading-9 text-white uppercase max-md:mt-10">
-                      <div className="text-lg leading-6 text-zinc-400">
-                        Utility Pages
-                      </div>
-                      <div className="mt-8">Start here</div>
-                      <div className="mt-5">Styleguide</div>
-                      <div className="mt-5">Password Protected</div>
-                      <div className="mt-5">404 Not found</div>
-                      <div className="mt-5">Licenses</div>
-                      <div className="mt-5">Changelog</div>
-                    </div> */}
-                  </div>
+                  <div className="flex flex-col ml-5 w-[42%] max-md:ml-0 max-md:w-full"></div>
                 </div>
               </div>
             </div>

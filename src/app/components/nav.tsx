@@ -18,7 +18,7 @@ export const Nav = () => {
   }, [items]);
   return (
     <>
-    <MobileNav/>
+  
     <div className=" absolute top-0 w-full hidden  justify-center items-center px-16 py-8 text-base font-black leading-5 uppercase bg-[#1d1d1e] max-md:px-5 lg:flex">
       <div className="flex gap-5 justify-between items-center w-full max-w-[1292px] max-md:flex-wrap max-md:max-w-full">
         <Link href={"/"}>

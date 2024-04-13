@@ -16,7 +16,7 @@ export const MobileNav = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="relative md:hidden bg-[#1d1d1e] ">
+    <nav className="relative md:hidden sm:hidden bg-[#1d1d1e] ">
       <button className="p-4 md:hidden" onClick={() => setIsOpen(!isOpen)}>
         <svg
           className="w-6 h-6"
@@ -52,6 +52,11 @@ export const MobileNav = () => {
             >
               About
             </Link>
+          </li>
+          <li>
+            <a href={"/shop"} className="block py-2 px-4 text-sm text-white ">
+              Shop
+            </a>
           </li>
           <li>
             <a
