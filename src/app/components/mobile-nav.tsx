@@ -11,9 +11,11 @@ import {
 } from "@/components/ui/navigation-menu";
 import Link from "next/link";
 import { useState } from "react";
+import { useProductModal } from "../shop/[id]/product-modal";
 
 export const MobileNav = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const onOpen = useProductModal((state) => state.onOpen);
 
   return (
     <nav className="relative md:hidden sm:hidden bg-[#1d1d1e] ">
@@ -67,10 +69,14 @@ export const MobileNav = () => {
             </a>
           </li>
           <li>
-            <a href={"contact"} className="block py-2 px-4 text-sm text-white ">
+            <Link
+              href={"contact"}
+              className="block py-2 px-4 text-sm text-white "
+            >
               Contact
-            </a>
+            </Link>
           </li>
+          <li onClick={onOpen}>Cart</li>
         </ul>
       </div>
     </nav>

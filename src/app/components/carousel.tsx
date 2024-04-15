@@ -82,8 +82,8 @@ const TestimonialCarousel = () => {
 
   return (
     <>
-      <Carousel>
-        <CarouselContent>
+      <Carousel className="hidden lg:block">
+        <CarouselContent className="">
           {cardsData.map((card, index) => (
             <div key={index} className="w-2/5 flex-shrink-0 p-4">
               <CarouselItem className="basis-1/3">
@@ -95,34 +95,16 @@ const TestimonialCarousel = () => {
         <CarouselPrevious />
         <CarouselNext />
       </Carousel>
+      <div className="flex flex-col md:hidden">
+        {cardsData.map((card, index) => (
+          <div key={index} className="w-2/5 flex-shrink-0 p-4">
+            <TestimonialCard {...card}></TestimonialCard>
+          </div>
+        ))}
+      </div>
     </>
 
-    // <div className="relative flex items-center mt-10  justify-center overflow-hidden">
-    //   <div
-    //     className="flex transition-transform duration-300 ease-out"
-    //     style={{ transform: `translateX(-${currentIndex * 100}%)` }}
-    //   >
-    //     {cardsData.map((card, index) => (
-    //       <div key={index} className="w-2/5 flex-shrink-0 p-4">
-    //         <TestimonialCard {...card} />
-    //       </div>
-    //     ))}
-    //   </div>
 
-    //   <div>
-    //     <ChevronLeftIcon
-    //       onClick={goLeft}
-    //       className="absolute cursor-pointer bg-[#1d1b1b] top-1/2 left-0 transform -translate-y-1/2  text-white rounded-full  p-2 z-10"
-    //       size={50}
-    //     />
-
-    //     <ChevronRightIcon
-    //       onClick={goRight}
-    //       className="absolute cursor-pointer bg-[#1d1b1b] top-1/2 right-0 transform -translate-y-1/2  text-white rounded-full  p-2 z-10"
-    //       size={50}
-    //     />
-    //   </div>
-    // </div>
   );
 };
 

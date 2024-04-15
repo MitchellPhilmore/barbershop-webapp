@@ -59,6 +59,7 @@ export const Nav = () => {
         </div>
       </div>
     </div>
+    <MobileNav/>
     
     </>
   );

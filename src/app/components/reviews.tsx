@@ -12,7 +12,7 @@ export const Reviews = () => {
           <img
             loading="lazy"
             src="https://cdn.builder.io/api/v1/image/assets/TEMP/0739682717f5154ff9757e91ea1b687bd7957a2a28388db47d02a3dab47dbd4d?"
-            className="shrink-0 self-stretch aspect-[3.45] w-[51px]"
+            className="shrink-0 self-stretch aspect-[3.45] w-[51px] sm:h-1/4"
           />
           <div className="shrink-0 self-stretch justify-end my-auto w-14 h-0.5 bg-orange-200" />
         </div>
@@ -34,7 +34,7 @@ export const Reviews = () => {
       </div>
 
       <div className="flex self-center  w-full text-lg leading-5 text-center uppercase max-w-[223px] max-md:mt-10 max-md:max-w-full"></div>
-      <Carousel />
+      <Carousel  />
 
       <Link href={"/contact"} className="justify-center self-center px-7 py-8 mt-40 bg-orange-200 cursor-pointer  hover:bg-[#C09B6B] max-md:px-5 max-md:mt-10">
         Book an appointment
