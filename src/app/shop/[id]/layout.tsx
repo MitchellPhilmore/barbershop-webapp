@@ -11,9 +11,7 @@ export default function DetailsLayout({
 }>) {
   return (
     <>
-      <Nav />
       <div>{children}</div>
-     
     </>
   );
 }

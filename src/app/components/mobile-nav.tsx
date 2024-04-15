@@ -18,7 +18,7 @@ export const MobileNav = () => {
   const onOpen = useProductModal((state) => state.onOpen);
 
   return (
-    <nav className="relative md:hidden sm:hidden bg-[#1d1d1e] ">
+    <nav className="relative lg:hidden bg-[#1d1d1e] ">
       <button className="p-4 md:hidden" onClick={() => setIsOpen(!isOpen)}>
         <svg
           className="w-6 h-6"
