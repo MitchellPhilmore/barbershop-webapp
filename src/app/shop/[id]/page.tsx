@@ -26,7 +26,7 @@ const ProductDetails = () => {
 
   return (
     <>
-      <div className="w-full  mt-10">
+      <div className="w-full">
         <Hero />
         <ProductInformation description={description} additionalInformation={additionalInformation} detailedDescription={detailedDescription} />
         <MoreProducts />
