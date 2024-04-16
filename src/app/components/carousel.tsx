@@ -60,6 +60,7 @@ const cardsData = [
   },
 ];
 
+
 const TestimonialCarousel = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
@@ -82,7 +83,8 @@ const TestimonialCarousel = () => {
 
   return (
     <>
-      <Carousel className="hidden lg:block">
+    <div className="hidden lg:flex">
+      <Carousel className="hidden lg:flex">
         <CarouselContent className="">
           {cardsData.map((card, index) => (
             <div key={index} className="w-2/5 flex-shrink-0 p-4">
@@ -95,6 +97,7 @@ const TestimonialCarousel = () => {
         <CarouselPrevious />
         <CarouselNext />
       </Carousel>
+      </div>
       <div className="flex flex-col md:hidden">
         {cardsData.map((card, index) => (
           <div key={index} className="w-2/5 flex-shrink-0 p-4">

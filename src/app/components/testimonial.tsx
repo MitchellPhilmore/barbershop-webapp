@@ -25,7 +25,7 @@ export const TestimonialCard = ({
 }: TestimonialProps) => {
   return (
     <>
-      <div className="  bg-white shadow-lg flex flex-col w-full ">
+      <div className=" hidden  bg-white shadow-lg lg:flex flex-col w-full ">
         <div className="flex cursor-pointer sm:flex-col">
           <img
             key={name + 1}

@@ -41,5 +41,8 @@ export const Reviews = () => {
       </Link>
       <div className=" mt-24 border-b border-[#dec7a6] my-8"></div>
     </div>
+
+  
   );
 };
+
