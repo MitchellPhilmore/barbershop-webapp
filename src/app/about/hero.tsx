@@ -5,7 +5,7 @@ import Link from "next/link";
 export const Hero = () => {
   return (
     <div className="flex flex-col">
-      <div className="flex flex-col h-full items-start p-20 w-full lg:h-[650px] bg-neutral-900 max-md:px-5 max-md:max-w-full">
+      <div className="flex flex-col h-full items-start p-20 w-full lg:h-[650px] bg-[#1D1D1E] max-md:px-5 max-md:max-w-full">
         <img
           loading="lazy"
           src="https://cdn.builder.io/api/v1/image/assets/TEMP/e3472475e5a10b4966c9e192c6c5fe3130d27eefa3d59bf1cc7004bccae9a00d?"
