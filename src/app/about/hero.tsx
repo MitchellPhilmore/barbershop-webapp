@@ -5,7 +5,7 @@ import Link from "next/link";
 export const Hero = () => {
   return (
     <div className="flex flex-col">
-      <div className="flex flex-col items-start p-20 w-full h-[650px] bg-neutral-900 max-md:px-5 max-md:max-w-full">
+      <div className="flex flex-col h-full items-start p-20 w-full lg:h-[650px] bg-neutral-900 max-md:px-5 max-md:max-w-full">
         <img
           loading="lazy"
           src="https://cdn.builder.io/api/v1/image/assets/TEMP/e3472475e5a10b4966c9e192c6c5fe3130d27eefa3d59bf1cc7004bccae9a00d?"
@@ -16,12 +16,12 @@ export const Hero = () => {
             About our
             <br />
             barber shop
-            <div className="flex gap-10 mt-12">
+            <div className="flex flex-col lg:flex-row gap-10 mt-12">
               <Link
                 href={"/contact"}
-                className="  w-75 items-center p-3 text-lg h-14 justify-center flex-row  bg-orange-200 hover:bg-[#C09B6B] text-neutral-900 max-md:px-5"
+                className="  w-60 items-center p-3 text-lg h-14 justify-center flex-row  bg-orange-200 hover:bg-[#C09B6B] text-neutral-900 max-md:px-5"
               >
-                Book an appointment
+                Book appointment
               </Link>
               <Link
                 href={"/services"}
@@ -31,16 +31,16 @@ export const Hero = () => {
               </Link>
             </div>
             <div className=" relative flex flex-col gap-5 pr-20 mt-12 mb-52  text-lg font-black leading-5 text-center uppercase max-md:flex-wrap max-md:pr-5 max-md:my-10">
-              <div className=" absolute left-0  flex justify-end">
+              <div className=" lg:absolute lg:left-0  flex justify-end">
                 <img
                   loading="lazy"
                   src="/hero-2.jpg"
-                  className="w-full h-[751px] sm: flex-col z-50 max-md:max-w-full"
+                  className="w-full scale-60 h-[751px] sm:flex-col z-50  max-md:max-w-full"
                 />
               </div>
             </div>
           </div>
-          <div className=" absolute right-0 self-start flec-row mt-5 text-lg leading-8">
+          <div className=" lg:absolute lg:right-0 self-start flex-row mt-5 text-lg leading-8">
             <div className="text-center text-lg mb-5">
               Eu, in in pharetra mauris mi pretium magnis nullam
               <br />
@@ -50,11 +50,11 @@ export const Hero = () => {
               <br />
               sollicitudin eu vel diam.
             </div>
-            <div className=" flex mb-6 flex-col justify-center items-end  px-16 max-md:max-w-full">
+            <div className=" flex mb-6 flex-col justify-center items-end  pr-16 max-md:max-w-full">
               <img
                 loading="lazy"
                 src="/hero-1.jpg"
-                className="max-w-full w-[562px] z-40 "
+                className="max-w-full lg:w-[562px] z-40 "
               />
             </div>
           </div>
