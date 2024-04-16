@@ -82,7 +82,7 @@ export const AboutUs = () => {
                 <img
                   src="/about-us-2.jpg"
                   alt="Bottom Left"
-                  className="absolute bottom-0 h-[50%] w-[60%] left-[-10%] "
+                  className="absolute bottom-0 h-[50%] w-[60%] left-[-10%]"
                 />
               </div>
             </div>

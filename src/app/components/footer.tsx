@@ -31,13 +31,13 @@ export const Footer = () => {
                       </div>
                     </div>
                     <div className="self-center mt-6 text-4xl font-black text-center text-white uppercase leading-[52.06px] max-md:max-w-full">
-                      Subscribe to our newsletter
+                      Join Our Community!
                     </div>
-                    <div className="mt-4 text-lg leading-8 text-center text-neutral-200 max-md:max-w-full">
-                      Nulla egestas sapien integer mi fermentum tellus tristique
-                      consequat pulvinar sagittis adipiscing
-                      <br />
-                      egestas purus et mi tempus semper id vel prci eu magna.
+                    <div className="mt-4 t leading-8 text-sm text-center text-neutral-200 max-md:max-w-full">
+                      Subscribe to our newsletter and stay ahead with the latest
+                      news, exclusive insights, and special offers delivered
+                      straight to your inbox. Don't miss out on the updates that
+                      matter to you. Sign up now to stay connected and informed!
                     </div>
                     <div className="flex gap-5 justify-between items-start self-center pb-5 mt-8 max-w-full uppercase border-b border-solid border-zinc-500 w-[690px] max-md:flex-wrap">
                       <div className="text-lg font-semibold tracking-widest text-neutral-200">
@@ -123,7 +123,6 @@ export const Footer = () => {
                 <div className="flex gap-5 max-md:flex-col max-md:gap-0">
                   <div className="flex flex-col w-[58%] max-md:ml-0 max-md:w-full">
                     <div className="flex flex-col font-black uppercase max-md:mt-10">
-                     
                       <div className="flex gap-5 justify-between mt-8 text-2xl leading-9 text-white">
                         <div className="flex flex-col self-start pb-5">
                           <Link href={"/home"}>Home</Link>

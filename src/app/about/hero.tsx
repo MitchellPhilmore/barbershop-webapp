@@ -30,12 +30,12 @@ export const Hero = () => {
                 Browse services
               </Link>
             </div>
-            <div className=" relative flex flex-col gap-5 pr-20 mt-12 mb-52  text-lg font-black leading-5 text-center uppercase max-md:flex-wrap max-md:pr-5 max-md:my-10">
+            <div className=" relative flex flex-col gap-5 lg:pr-20 mt-12 mb-52  text-lg font-black leading-5 text-center uppercase max-md:flex-wrap max-md:pr-5 max-md:my-10">
               <div className=" lg:absolute lg:left-0  flex justify-end">
                 <img
                   loading="lazy"
                   src="/hero-2.jpg"
-                  className="w-full scale-60 h-[751px] sm:flex-col z-50  max-md:max-w-full"
+                  className="w-full lg:scale-60 h-[751px] sm:flex-col z-50  max-md:max-w-full"
                 />
               </div>
             </div>
