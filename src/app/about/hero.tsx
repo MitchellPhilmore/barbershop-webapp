@@ -62,16 +62,16 @@ export const Hero = () => {
       </div>
       <div className="flex z-10 flex-col px-20  w-full max-md:px-5 max-md:max-w-full bg-[#f8f5ef]">
         <div className="self-end mt-24 mr-14 text-lg leading-8 text-neutral-700 max-md:mr-2.5 max-md:max-w-full">
-          <div className="self-end mt-24 text-6xl font-black uppercase leading-[67.2px] text-neutral-900 max-md:mr-2.5 max-md:text-4xl">
+          <div className="self-end  text-6xl font-black uppercase leading-[67.2px] text-neutral-900 max-md:mr-2.5 max-md:text-4xl">
             <img
               loading="lazy"
               src="https://cdn.builder.io/api/v1/image/assets/TEMP/a302a2f4a8791c3b4c9f2402b573d48601d26fcfb08927608e846dfdfb798117?"
               className="self-center mt-56 ml-36 aspect-[3.45] w-[51px] max-md:mt-10"
             />
 
-            <p className="lg:pl-20"> Who we are</p>
+            <p className="lg:pl-20 "> Who we are</p>
           </div>
-          <div className="lg:pl-20">
+          <div className="lg:pl-20 mt-10">
             Eu, in in pharetra mauris mi pretium magnis nullam et consequat
             <br />
             vel ina sit ut pharetra ultrices feugiat etol quam luctus in dictum
@@ -81,14 +81,14 @@ export const Hero = () => {
             mauris mi pretium magnis nullam et consequat vel ina sit ut
             <br />
             pharetra ultrices feugiat.
-            <div className=" flex overflow-hidden flex-col  pt-9 pr-3.5 pb-20  mt-0 w-full max-w-[1292px] max-md:pl-5 max-md:max-w-full">
+            <div className=" flex overflow-hidden flex-col  pt-9 pr-3.5 pb-20  mt-0 w-full max-w-[1292px]  max-md:max-w-full">
               <div className="text-lg leading-8 text-neutral-700 max-md:max-w-full">
-                Eu, in in pharetra mauris mi pretium magnis nullam et consequat
+              Eu, in in pharetra mauris mi pretium magnis nullam et consequat
                 <br />
-                vel ina sit ut pharetra ultrices feugiat etol quam luctus in
+              vel ina sit ut pharetra ultrices feugiat etol quam luctus in
                 dictum
                 <br />
-                placerat malesuada sollicitudin eu vel diam eu.
+              placerat malesuada sollicitudin eu vel diam eu.
               </div>
               <Link
                 href={"/about"}
