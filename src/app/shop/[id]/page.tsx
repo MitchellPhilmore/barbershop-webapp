@@ -26,9 +26,13 @@ const ProductDetails = () => {
 
   return (
     <>
-      <div className="w-full">
+      <div className="w-full  lg:mt-10">
         <Hero />
-        <ProductInformation description={description} additionalInformation={additionalInformation} detailedDescription={detailedDescription} />
+        <ProductInformation
+          description={description}
+          additionalInformation={additionalInformation}
+          detailedDescription={detailedDescription}
+        />
         <MoreProducts />
       </div>
     </>
