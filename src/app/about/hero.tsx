@@ -62,7 +62,7 @@ export const Hero = () => {
       </div>
       <div className="flex z-10 flex-col px-20  w-full max-md:px-5 max-md:max-w-full bg-[#f8f5ef]">
         <div className="self-end mt-24 mr-14 text-lg leading-8 text-neutral-700 max-md:mr-2.5 max-md:max-w-full">
-          <div className="self-end mt-24 mr-60 text-6xl font-black uppercase leading-[67.2px] text-neutral-900 max-md:mr-2.5 max-md:text-4xl">
+          <div className="self-end mt-24 text-6xl font-black uppercase leading-[67.2px] text-neutral-900 max-md:mr-2.5 max-md:text-4xl">
             <img
               loading="lazy"
               src="https://cdn.builder.io/api/v1/image/assets/TEMP/a302a2f4a8791c3b4c9f2402b573d48601d26fcfb08927608e846dfdfb798117?"
