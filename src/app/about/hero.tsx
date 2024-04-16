@@ -69,9 +69,9 @@ export const Hero = () => {
               className="self-center mt-56 ml-36 aspect-[3.45] w-[51px] max-md:mt-10"
             />
 
-            <p> Who we are</p>
+            <p className="lg:pl-20"> Who we are</p>
           </div>
-          <div>
+          <div className="lg:pl-20">
             Eu, in in pharetra mauris mi pretium magnis nullam et consequat
             <br />
             vel ina sit ut pharetra ultrices feugiat etol quam luctus in dictum
