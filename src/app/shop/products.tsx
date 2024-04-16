@@ -40,7 +40,7 @@ const Products = () => {
                         {description}
                       </div>
                       <div className="mt-6 text-center uppercase max-md:mr-1">
-                        {price}
+                        ${price}
                       </div>
                     </Link>
                   </div>

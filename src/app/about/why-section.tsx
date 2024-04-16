@@ -4,7 +4,7 @@ import { scrollToSection } from "@/lib/utils";
 
 export const WhySection = () => {
   return (
-    <div className=" mt-10 flex justify-center items-center px-16 py-20 bg-white max-md:px-5">
+    <div className=" mt-10 flex justify-center items-center px-16 lg:py-20 bg-white max-md:px-5">
       <div className="mt-40 w-full max-w-[1292px] max-md:mt-10 max-md:max-w-full">
         <div className="flex gap-5 max-md:flex-col max-md:gap-0">
           <div className="flex flex-col w-3/5 max-md:ml-0 max-md:w-full">
