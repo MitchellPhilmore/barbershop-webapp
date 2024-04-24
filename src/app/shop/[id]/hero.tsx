@@ -30,7 +30,7 @@ const Hero = () => {
     useCartStore();
   const isOpen = useProductModal((state) => state.isOpen);
   const onOpen = useProductModal((state) => state.onOpen);
-  console.log("works");
+ 
 
   useEffect(() => {
     axios.get(`/api/products/${params.id}`).then(({ data }) => {
