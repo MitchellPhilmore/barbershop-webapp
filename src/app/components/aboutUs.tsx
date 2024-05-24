@@ -1,7 +1,33 @@
 "use client";
 
 import Link from "next/link";
-import ScrollAnimation from "react-animate-on-scroll";
+
+
+interface SectionProps {
+  title: string;
+  content: string;
+  imgSrc: string;
+}
+
+const Section = ({ title, content, imgSrc }: SectionProps) => {
+  return (
+    <div className="flex gap-5 justify-center mt-10 max-md:flex-wrap">
+      <img
+        loading="lazy"
+        src={imgSrc}
+        className="shrink-0 self-start w-14 aspect-[0.98]"
+      />
+      <div className="flex flex-col grow shrink-0 pb-4 basis-0 w-fit max-md:max-w-full">
+        <div className="text-lg font-black leading-5 uppercase text-neutral-900 max-md:max-w-full">
+          {title}
+        </div>
+        <div className="text-lg leading-8 text-neutral-700 max-md:mr-2.5 max-md:max-w-full">
+          {content}
+        </div>
+      </div>
+    </div>
+  );
+};
 
 export const AboutUs = () => {
   return (
@@ -28,41 +54,17 @@ export const AboutUs = () => {
                   <br />
                   semper id vel prci eu magna in senectus sit eget justo eget.
                 </div>
-                <div className="flex gap-5 justify-center mt-10 max-md:flex-wrap">
-                  <img
-                    loading="lazy"
-                    src="https://cdn.builder.io/api/v1/image/assets/TEMP/f54f17ed7214dfc90351aa6875cf9d22b7956b0d56fad32489c83b8be265e7be?"
-                    className="shrink-0 self-start w-14 aspect-[0.98]"
-                  />
-                  <div className="flex flex-col grow shrink-0 pb-4 basis-0 w-fit max-md:max-w-full">
-                    <div className="text-lg font-black leading-5 uppercase text-neutral-900 max-md:max-w-full">
-                      Top Barbers
-                    </div>
-                    <div className="text-lg leading-8 text-neutral-700 max-md:mr-2.5 max-md:max-w-full">
-                      A mollis pretium sagittis iaculis quam lacus nulla nullam
-                      <br />
-                      pharetra quis fermentum ipsum phasellus sit.
-                    </div>
-                  </div>
-                </div>
+                <Section
+                  title="Top Barbers"
+                  content=" A mollis pretium sagittis iaculis quam lacus nulla nullam  pharetra quis fermentum ipsum phasellus sit."
+                  imgSrc="https://cdn.builder.io/api/v1/image/assets/TEMP/f54f17ed7214dfc90351aa6875cf9d22b7956b0d56fad32489c83b8be265e7be?"
+                />
+                <Section
+                  title="Premium services"
+                  content=" Nulla leo velit feugiat in consequat accumsan est enim mi  consectetur dis pulvinar venenatis dapibus."
+                  imgSrc="https://cdn.builder.io/api/v1/image/assets/TEMP/d9a42f7da970fb2fb081593cc52826501c1f5e2543f254266eb2d621350eafb7?"
+                />
 
-                <div className="flex  gap-5 justify-center bg-[#f8f5ef] px-0.5 mt-3 max-md:flex-wrap">
-                  <img
-                    loading="lazy"
-                    src="https://cdn.builder.io/api/v1/image/assets/TEMP/d9a42f7da970fb2fb081593cc52826501c1f5e2543f254266eb2d621350eafb7?"
-                    className="shrink-0 self-start w-14 aspect-[0.98]"
-                  />
-                  <div className="flex flex-col grow shrink-0 pb-4 basis-0 w-fit max-md:max-w-full">
-                    <div className="text-lg font-black leading-5 uppercase text-neutral-900 max-md:max-w-full">
-                      Premium services
-                    </div>
-                    <div className="text-lg leading-8 text-neutral-700 max-md:max-w-full">
-                      Nulla leo velit feugiat in consequat accumsan est enim mi
-                      <br />
-                      consectetur dis pulvinar venenatis dapibus.
-                    </div>
-                  </div>
-                </div>
                 <Link
                   href={"/contact"}
                   className="justify-center self-start px-7 py-8 mt-10 text-lg font-black leading-5 text-center uppercase bg-orange-200 text-neutral-900 max-md:px-5"
