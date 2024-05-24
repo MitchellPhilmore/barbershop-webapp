@@ -21,3 +21,17 @@ export const scrollToSection = (sectionId: string) => {
     section.scrollIntoView({ behavior: "smooth", block: "start" });
   }
 };
+
+export function sanitizeString(input: string): string {
+  return input.replace(/<script.*?>.*?<\/script>/gi, ''); // Basic XSS prevention
+}
+
+export function validatePrice(price:string) : string {
+  return parseFloat(price).toFixed(2); // Ensure price is a number with two decimal places
+}
+
+export function sanitizeUrl(url:string) : string {
+  return encodeURI(url); // Ensure the URL is correctly encoded
+}
+
+
