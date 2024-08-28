@@ -18,14 +18,11 @@ export const Services = () => {
           </div>
         </div>
         <div className="mt-6 text-6xl font-black text-center uppercase leading-[67.2px] text-neutral-900 max-md:max-w-full max-md:text-4xl">
-          Browse our services
         </div>
         <div className="mt-4 text-lg leading-8 text-center text-neutral-700 max-md:max-w-full">
-          Nulla egestas sapien integer mi fermentum tellus tristique consequat
-          pulvinar sagittis adipiscing
+          Our services are designed to provide the best care and attention to your grooming needs.
           <br />
-          egestas purus et mi tempus semper id vel prci eu magna in senectus sit
-          eget justo eget.
+          We offer a variety of services to ensure you look and feel your best.
         </div>
         <div className="flex gap-0 self-stretch pl-20 mt-10 max-md:flex-wrap max-md:pl-5 max-md:mt-10 max-md:max-w-full">
           <div className="flex flex-col grow shrink-0 p-20 bg-white shadow-lg basis-0 max-w-[1130px] w-fit max-md:px-5 max-md:max-w-full">
@@ -45,11 +42,11 @@ export const Services = () => {
                         <div className="flex flex-col grow pt-2 pr-1.5 pb-px text-xl font-black leading-7 max-w-[338px] text-neutral-900 max-md:mt-10">
                           <div className="uppercase">Classic Haircut</div>
                           <div className="mt-3.5 text-lg leading-8 text-neutral-700">
-                            Nulla egestas sapien integer mi
+                            Experience a timeless haircut that never goes out of style.
                             <br />
-                            fermentum tellus tristique consequatolm
+                            Our classic haircut is perfect for any occasion.
                             <br />
-                            pulvinar sagittis adipiscing.
+                            Look sharp and feel confident.
                           </div>
                           <div className="mt-6 uppercase">$37 USD</div>
                         </div>
@@ -71,11 +68,11 @@ export const Services = () => {
                         <div className="flex flex-col grow pt-2 pr-1.5 pb-px text-xl font-black leading-7 max-w-[338px] text-neutral-900 max-md:mt-10">
                           <div className="uppercase">Beard Trim</div>
                           <div className="mt-3.5 text-lg leading-8 text-neutral-700">
-                            Nulla egestas sapien integer mi
+                            Keep your beard looking sharp and well-groomed.
                             <br />
-                            fermentum tellus tristique consequatolm
+                            Our beard trim service ensures a clean and polished look.
                             <br />
-                            pulvinar sagittis adipiscing.
+                            Perfect for maintaining your style.
                           </div>
                           <div className="mt-6 uppercase">$25 USD</div>
                         </div>
@@ -101,11 +98,11 @@ export const Services = () => {
                         <div className="flex flex-col grow pt-2 pr-1.5 pb-px text-xl font-black leading-7 max-w-[338px] text-neutral-900 max-md:mt-10">
                           <div className="uppercase">kids haircut</div>
                           <div className="mt-3.5 text-lg leading-8 text-neutral-700">
-                            Nulla egestas sapien integer mi
+                            A fun and stylish haircut for the little ones.
                             <br />
-                            fermentum tellus tristique consequatolm
+                            Our kids haircut service is gentle and caring.
                             <br />
-                            pulvinar sagittis adipiscing.
+                            Ensuring a pleasant experience for your child.
                           </div>
                           <div className="mt-6 uppercase">$26 USD</div>
                         </div>
@@ -127,11 +124,11 @@ export const Services = () => {
                         <div className="flex flex-col grow pt-2 pr-1.5 pb-px text-xl font-black leading-7 max-w-[338px] text-neutral-900 max-md:mt-10">
                           <div className="uppercase">Neck shave</div>
                           <div className="mt-3.5 text-lg leading-8 text-neutral-700">
-                            Nulla egestas sapien integer mi
+                            Achieve a clean and smooth neckline with our neck shave service.
                             <br />
-                            fermentum tellus tristique consequatolm
+                            Perfect for a polished and professional look.
                             <br />
-                            pulvinar sagittis adipiscing.
+                            Ideal for maintaining a sharp appearance.
                           </div>
                           <div className="mt-6 uppercase">$12 USD</div>
                         </div>
@@ -157,11 +154,11 @@ export const Services = () => {
                         <div className="flex flex-col grow pt-2 pr-1.5 text-xl font-black leading-7 max-w-[338px] text-neutral-900 max-md:mt-10">
                           <div className="uppercase">scalp Moisturizing</div>
                           <div className="mt-3.5 text-lg leading-8 text-neutral-700">
-                            Nulla egestas sapien integer mi
+                            Rejuvenate your scalp with our moisturizing treatment.
                             <br />
-                            fermentum tellus tristique consequatolm
+                            Perfect for dry and itchy scalps.
                             <br />
-                            pulvinar sagittis adipiscing.
+                            Leaves your scalp feeling refreshed and hydrated.
                           </div>
                           <div className="mt-6 uppercase">$55 USD</div>
                         </div>
@@ -183,11 +180,11 @@ export const Services = () => {
                         <div className="flex flex-col grow pt-2 pr-1.5 text-xl font-black leading-7 max-w-[338px] text-neutral-900 max-md:mt-10">
                           <div className="uppercase">beard grooming & spa</div>
                           <div className="mt-3.5 text-lg leading-8 text-neutral-700">
-                            Nulla egestas sapien integer mi
+                            Indulge in our luxurious beard grooming and spa service.
                             <br />
-                            fermentum tellus tristique consequatolm
+                            Perfect for a relaxing and pampering experience.
                             <br />
-                            pulvinar sagittis adipiscing.
+                            Leaves your beard looking and feeling its best.
                           </div>
                           <div className="mt-6 uppercase">$46 USD</div>
                         </div>

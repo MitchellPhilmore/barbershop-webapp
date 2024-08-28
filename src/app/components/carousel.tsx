@@ -14,7 +14,7 @@ const cardsData = [
     imageUrl: "/testimonial-1.jpg",
     title: "THE BEST BARBER SHOP I’VE EVER BEEN",
     description:
-      "Et proin ut in dignissim sem non a nullam magna lectus urna et dui quam tellus imperdiet sit purus at fringilla scelerisque diam amet fermentum orci fringilla aliquet nulla lectus erat eu auctor diam potenti turpis interdum eu.",
+      "The attention to detail and the friendly atmosphere make this place stand out. I always leave feeling refreshed and looking sharp.",
     name: "John Williams",
     location: "Philadelphia, PA",
   },
@@ -22,41 +22,41 @@ const cardsData = [
     imageUrl: "/testimonial-2.jpg",
     title: "THIS BARBER SHOP IS SIMPLY AWESOME",
     description:
-      "Et proin ut in dignissim sem non a nullam magna lectus urna et dui quam tellus imperdiet sit purus at fringilla scelerisque diam amet fermentum orci fringilla aliquet nulla lectus erat eu auctor diam potenti turpis interdum eu.",
+      "From the moment I walked in, I felt welcomed. The barbers are skilled and the service is top-notch. Highly recommend!",
     name: "Sean Carter",
     location: "Atlantic City, NJ",
   },
   {
     imageUrl: "/testimonial-2.jpg",
-    title: "THIS BARBER SHOP IS SIMPLY AWESOME",
+    title: "A CUT ABOVE THE REST",
     description:
-      "Et proin ut in dignissim sem non a nullam magna lectus urna et dui quam tellus imperdiet sit purus at fringilla scelerisque diam amet fermentum orci fringilla aliquet nulla lectus erat eu auctor diam potenti turpis interdum eu.",
-    name: "Sean Carter",
-    location: "Atlantic City, NJ",
+      "I've been to many barber shops, but this one is by far the best. The ambiance, the service, and the quality of the haircut are unparalleled.",
+    name: "Michael Brown",
+    location: "New York, NY",
   },
   {
     imageUrl: "/testimonial-1.jpg",
-    title: "THE BEST BARBER SHOP I’VE EVER BEEN",
+    title: "EXCEPTIONAL SERVICE EVERY TIME",
     description:
-      "Et proin ut in dignissim sem non a nullam magna lectus urna et dui quam tellus imperdiet sit purus at fringilla scelerisque diam amet fermentum orci fringilla aliquet nulla lectus erat eu auctor diam potenti turpis interdum eu.",
-    name: "John Williams",
-    location: "Philadelphia, PA",
+      "Every visit is a great experience. The barbers are professional and the results are always fantastic. I wouldn't go anywhere else.",
+    name: "David Smith",
+    location: "Boston, MA",
   },
   {
     imageUrl: "/testimonial-2.jpg",
-    title: "THIS BARBER SHOP IS SIMPLY AWESOME",
+    title: "TOP-NOTCH BARBER SHOP",
     description:
-      "Et proin ut in dignissim sem non a nullam magna lectus urna et dui quam tellus imperdiet sit purus at fringilla scelerisque diam amet fermentum orci fringilla aliquet nulla lectus erat eu auctor diam potenti turpis interdum eu.",
-    name: "Sean Carter",
-    location: "Atlantic City, NJ",
+      "The best haircut I've ever had! The staff is friendly, the environment is clean, and the service is exceptional. I highly recommend this place.",
+    name: "Chris Johnson",
+    location: "Los Angeles, CA",
   },
   {
     imageUrl: "/testimonial-2.jpg",
-    title: "THIS BARBER SHOP IS SIMPLY AWESOME",
+    title: "FANTASTIC EXPERIENCE",
     description:
-      "Et proin ut in dignissim sem non a nullam magna lectus urna et dui quam tellus imperdiet sit purus at fringilla scelerisque diam amet fermentum orci fringilla aliquet nulla lectus erat eu auctor diam potenti turpis interdum eu.",
-    name: "Sean Carter",
-    location: "Atlantic City, NJ",
+      "I love coming here. The barbers are talented and the atmosphere is great. I always leave feeling satisfied with my haircut.",
+    name: "James Davis",
+    location: "Chicago, IL",
   },
 ];
 

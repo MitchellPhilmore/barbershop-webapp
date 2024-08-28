@@ -80,11 +80,6 @@ export const Header = () => {
               experience
             </div>
             <div className="mt-4 text-lg leading-8 text-white max-md:max-w-full animate-fade-in-up">
-              Eu, in in pharetra mauris mi pretium magnis nullam et consequat
-              vel ina sit ut pharetra ultrices
-              <br />
-              feugiat etol quam luctus in dictum placerat malesuada sollicitudin
-              eu vel diam.
             </div>
             <div className="flex justify-center items-center self-stretch px-16 mt-10 text-lg leading-5 uppercase max-md:px-5 max-md:mt-10 max-md:max-w-full">
               <div className="flex gap-5 justify-between max-md:flex-wrap">

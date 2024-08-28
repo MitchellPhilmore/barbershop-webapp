@@ -106,67 +106,62 @@ const Hero = () => {
           </div>
           <div className="flex flex-col ml-5 w-6/12 max-md:ml-0 max-md:w-full">
             <div className="flex flex-col grow text-lg font-semibold uppercase text-neutral-200 max-md:mt-10 max-md:max-w-full">
-              <div className="flex gap-10 justify-between items-center tracking-widest max-md:flex-wrap">
-                <div className=" w-1/2 relative border-b-2 border-gray-300 border-animate focus-within:border-none">
+              <div className="flex flex-col gap-4">
+                <div className="relative border-b-2 border-gray-300">
                   <Input
                     id="name"
                     name="name"
                     onChange={formHandler}
                     type="text"
-                    className="bg-transparent text-2xl border-none text-white placeholder-white w-full pb-1 shadow-lg focus:shadow-none outline-none ring-0 border-0 p-2"
+                    className="bg-transparent text-lg border-none text-white placeholder-white w-full pb-1 outline-none"
                     placeholder="Full Name"
                   />
                 </div>
-
-                <div className="relative border-b-2 w-1/2 border-gray-300 border-animate ">
+                <div className="relative border-b-2 border-gray-300">
                   <Input
                     id="email"
                     name="email"
                     onChange={formHandler}
                     type="text"
-                    className=" text-2xl text-white bg-transparent outline-none border-none focus-within:shadow-none focus-within:border-none focus-visible:shadow-none focus-visible:bor placeholder-white w-full pb-1"
+                    className="bg-transparent text-lg border-none text-white placeholder-white w-full pb-1 outline-none"
                     placeholder="Enter your email"
                   />
                 </div>
-              </div>
-              <div className="flex gap-10 mt-8 tracking-widest max-md:flex-wrap">
-                <div className="relative border-b-2 w-full border-gray-300 border-animate ">
+                <div className="relative border-b-2 border-gray-300">
                   <Input
                     onChange={formHandler}
                     id="phone-number"
                     name="phoneNumber"
                     type="tel"
-                    className=" text-white text-2xl bg-transparent outline-none border-none focus-within:shadow-none focus-within:border-none focus-visible:shadow-none focus-visible:bor placeholder-white w-full pb-1"
+                    className="bg-transparent text-lg border-none text-white placeholder-white w-full pb-1 outline-none"
                     placeholder="Enter your phone"
                   />
                 </div>
-                <div className="relative border-b-2 w-full border-gray-300 border-animate ">
+                <div className="relative border-b-2 border-gray-300">
                   <Input
                     onChange={formHandler}
                     id="subject"
                     name="subject"
                     type="text"
-                    className="placeholder-white  text-white text-2xl bg-transparent outline-none border-none focus-within:shadow-none focus-within:border-none focus-visible:shadow-none focus-visible:placeholder-white w-full pb-1"
+                    className="bg-transparent text-lg border-none text-white placeholder-white w-full pb-1 outline-none"
                     placeholder="Subject"
                   />
                 </div>
+                <Textarea
+                  onChange={formHandler}
+                  id="message"
+                  name="message"
+                  placeholder="Please type your message here...."
+                  className="bg-transparent text-lg border-b-2 border-gray-300 text-white placeholder-white w-full pb-1 outline-none"
+                />
+                <Button
+                  onClick={sendMessage}
+                  disabled={loading}
+                  className="w-full py-3 font-black text-center bg-orange-200 text-neutral-900 hover:bg-[#C09B6B]"
+                >
+                  {loading ? <LoaderCircle /> : "Send Message"}
+                </Button>
               </div>
-
-              <Textarea
-                onChange={formHandler}
-                id="message"
-                name="message"
-                placeholder="Please type your message here...."
-                className="mt-8 text-2xl p-10 bg-transparent h-64 border-none placeholder-white"
-              />
-
-              <Button
-                onClick={sendMessage}
-                disabled={loading}
-                className="justify-center cursor-pointer items-center px-16 py-8 mt-8 font-black text-center bg-orange-200 leading-[111%] text-neutral-900 max-md:px-5 max-md:max-w-full  hover:bg-[#C09B6B]"
-              >
-                {loading ? <LoaderCircle /> : "Send Message"}
-              </Button>
             </div>
           </div>
         </div>
