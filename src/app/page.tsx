@@ -1,4 +1,5 @@
 "use client";
+import Link from "next/link";
 import Image from "next/image";
 import { Header } from "./components/header";
 import { CustomerRating } from "./components/customer-rating";
@@ -26,6 +27,9 @@ export default function Home() {
           <Reviews />
           <SocialMediaSection />
           <Footer />
+          <Link href="/dashboard" className="text-blue-600 hover:underline">
+            Admin Dashboard
+          </Link>
         </div>
       </ParallaxProvider>
     </>
