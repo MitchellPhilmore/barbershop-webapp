@@ -283,7 +283,7 @@ export function AdminProductList() {
             currentPage,
             totalPages,
             onPageChange: setCurrentPage,
-          } as PaginationProps)}
+          } as any)}
         />
       </div>
     </div>

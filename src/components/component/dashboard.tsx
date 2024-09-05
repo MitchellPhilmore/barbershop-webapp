@@ -21,7 +21,11 @@ import { AdminProductList } from "./admin-product-list";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { DollarSign, Scissors, Star, Users } from "lucide-react";
 
-export function Dashboard() {
+interface DashboardProps {
+  onSignOut: () => Promise<void>;
+}
+
+export function Dashboard({ onSignOut }: DashboardProps) {
   const [currentView, setCurrentView] = useState("dashboard");
 
   const handleNavigation = (view: string) => {
@@ -91,7 +95,12 @@ export function Dashboard() {
             </Link>
           </nav>
         </div>
-      
+        <button
+          onClick={onSignOut}
+          className="ml-auto text-sm text-muted-foreground hover:text-foreground"
+        >
+          Sign Out
+        </button>
       </header>
       <main className="flex flex-col flex-1 gap-8 p-4 md:gap-10 md:p-10">
         {currentView === "dashboard" && (
